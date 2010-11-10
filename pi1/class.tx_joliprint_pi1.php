@@ -58,7 +58,6 @@ class tx_joliprint_pi1 extends tslib_pibase {
 		$this->pi_initPIflexForm(); 
 		
 		$this->flexConfig = $this->getFlexData2Array($this->cObj->data['pi_flexform']);
-		t3lib_div::debug($this->flexConfig,'pi_flex');
 		
 		$buttonLabelLeft = 0;
 		$buttonLabel = 'joliprint';
