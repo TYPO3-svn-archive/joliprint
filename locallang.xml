@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for extension 'joliprint'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pi1_title">joliprint button</label>
+			<label index="pi1_plus_wiz_description">adds the joliprint button to the page</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="pi1_title">Joliprint Button</label>
+			<label index="pi1_plus_wiz_description">fügt den Joliprint Button zur Seite hinzu.</label>
+		</languageKey>
+	</data>
+</T3locallang>

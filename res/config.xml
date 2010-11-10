@@ -1,0 +1,91 @@
+<T3DataStructure>
+ <meta type="array">
+  <langDisable>1</langDisable>
+ </meta>
+ <sheets type="array">
+  <sDEF type="array">
+   <ROOT type="array">
+    <TCEforms type="array">
+     <sheetTitle>LLL:EXT:joliprint/locallang_db.xml:tt_content.pi_flexform.sheet_general</sheetTitle>
+    </TCEforms>
+    <type>array</type>
+    <el type="array">
+     <button type="array">
+      <TCEforms type="array">
+       <config type="array">
+        <type_t3dev>select</type_t3dev>
+        <maxitems>1</maxitems>
+        <size></size>
+        <type>select</type>
+        <items type="array">
+         <numIndex index="0" type="array">
+          <numIndex index="0">LLL:EXT:joliprint/locallang_db.xml:tt_content.pi_flexform.field_button.I.0</numIndex>
+          <numIndex index="1" type="integer">0</numIndex>
+         </numIndex>
+         <numIndex index="1" type="array">
+          <numIndex index="0">LLL:EXT:joliprint/locallang_db.xml:tt_content.pi_flexform.field_button.I.1</numIndex>
+          <numIndex index="1" type="integer">1</numIndex>
+         </numIndex>
+         <numIndex index="2" type="array">
+          <numIndex index="0">LLL:EXT:joliprint/locallang_db.xml:tt_content.pi_flexform.field_button.I.2</numIndex>
+          <numIndex index="1" type="integer">2</numIndex>
+         </numIndex>
+         <numIndex index="3" type="array">
+          <numIndex index="0">LLL:EXT:joliprint/locallang_db.xml:tt_content.pi_flexform.field_button.I.3</numIndex>
+          <numIndex index="1" type="integer">3</numIndex>
+         </numIndex>
+         <numIndex index="4" type="array">
+          <numIndex index="0">LLL:EXT:joliprint/locallang_db.xml:tt_content.pi_flexform.field_button.I.4</numIndex>
+          <numIndex index="1" type="integer">4</numIndex>
+         </numIndex>
+         <numIndex index="5" type="array">
+          <numIndex index="0">LLL:EXT:joliprint/locallang_db.xml:tt_content.pi_flexform.field_button.I.5</numIndex>
+          <numIndex index="1" type="integer">5</numIndex>
+         </numIndex>
+         <numIndex index="6" type="array">
+          <numIndex index="0">LLL:EXT:joliprint/locallang_db.xml:tt_content.pi_flexform.field_button.I.6</numIndex>
+          <numIndex index="1" type="integer">6</numIndex>
+         </numIndex>
+        </items>
+       </config>
+       <label>LLL:EXT:joliprint/locallang_db.xml:tt_content.pi_flexform.field_button</label>
+      </TCEforms>
+     </button>
+     <button_label type="array">
+      <TCEforms type="array">
+       <config type="array">
+        <type_t3dev>input</type_t3dev>
+        <size></size>
+        <max></max>
+        <type>input</type>
+       </config>
+       <label>LLL:EXT:joliprint/locallang_db.xml:tt_content.pi_flexform.field_button_label</label>
+      </TCEforms>
+     </button_label>
+     <button_icon type="array">
+      <TCEforms type="array">
+       <config type="array">
+        <type_t3dev>link</type_t3dev>
+        <type>input</type>
+        <size type="integer">15</size>
+        <max type="integer">255</max>
+        <eval>trim</eval>
+        <wizards type="array">
+         <_PADDING type="integer">2</_PADDING>
+         <link type="array">
+          <type>popup</type>
+          <title>Link</title>
+          <icon>link_popup.gif</icon>
+          <script>browse_links.php?mode=wizard</script>
+          <JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+         </link>
+        </wizards>
+       </config>
+       <label>LLL:EXT:joliprint/locallang_db.xml:tt_content.pi_flexform.field_button_icon</label>
+      </TCEforms>
+     </button_icon>
+    </el>
+   </ROOT>
+  </sDEF>
+ </sheets>
+</T3DataStructure>
