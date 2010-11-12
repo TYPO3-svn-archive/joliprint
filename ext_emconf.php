@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Joliprint',
-	'description' => 'adds the Joliprint button, so that users can print the page with style. See joliprint.com for more infos.',
+	'description' => 'The Joliprint button allows your users to print a page in a nice style or export it to pdf. See joliprint.com for more infos.',
 	'category' => 'plugin',
 	'author' => 'Dirk Diebel',
 	'author_email' => 'typo3@phpmedia.de',
