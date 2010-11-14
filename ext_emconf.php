@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "joliprint".
 #
-# Auto generated 14-11-2010 18:34
+# Auto generated 14-11-2010 18:47
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -29,7 +29,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
 	'author_company' => '',
-	'version' => '1.0.0',
+	'version' => '2.0.0',
 	'constraints' => array(
 		'depends' => array(
 		),
