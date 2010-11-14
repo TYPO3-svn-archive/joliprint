@@ -43,6 +43,7 @@ class tx_joliprint_pi1 extends tslib_pibase {
 	var $extKey        = 'joliprint';	// The extension key.
 	var $pi_checkCHash = true;
 	var $flexConfig = array();
+	var $joliPath = 'http://api.joliprint.com/res/joliprint/img/buttons/default/';
 	
 	/**
 	 * The main method of the PlugIn
@@ -61,36 +62,38 @@ class tx_joliprint_pi1 extends tslib_pibase {
 		
 		$buttonLabelLeft = 0;
 		$buttonLabel = 'joliprint';
-		switch($this->flexConfig['button']){
+		$buttonType = ($this->flexConfig['button']!="")?$this->flexConfig['button']:$this->config['button.']['type'];
+		
+		switch($buttonType){
 			
 			case 1:
-				$buttonUrl = 'http://api.joliprint.com/res/joliprint/img/buttons/default/joliprint-button-big.png';
+				$buttonUrl = $this->joliPath.'joliprint-button-big.png';
 				break;
 			case 2:
-				$buttonUrl = 'http://api.joliprint.com/res/joliprint/img/buttons/default/joliprint-button-both.png';
+				$buttonUrl = $this->joliPath.'joliprint-button-both.png';
 				break;
 			case 3:
-				$buttonUrl = 'http://api.joliprint.com/res/joliprint/img/buttons/default/joliprint-icon-small.png';
+				$buttonUrl = $this->joliPath.'joliprint-icon-small.png';
 				$buttonLabelLeft = 1;
-				$buttonLabel = $this->flexConfig['button_label'];
+				$buttonLabel = ($this->flexConfig['button_label']!="")?$this->flexConfig['button_label']:$this->conf['button.']['label'];
 				break;
 			case 4:
-				$buttonUrl = 'http://api.joliprint.com/res/joliprint/img/buttons/default/joliprint-icon.png';
+				$buttonUrl = $this->joliPath.'joliprint-icon.png';
 				$buttonLabelLeft = 1;
-				$buttonLabel = $this->flexConfig['button_label'];
+				$buttonLabel = ($this->flexConfig['button_label']!="")?$this->flexConfig['button_label']:$this->conf['button.']['label'];
 				break;
 			case 5:
-				$buttonUrl = 'http://api.joliprint.com/res/joliprint/img/buttons/default/pdf-icone.gif';
+				$buttonUrl = $this->joliPath.'pdf-icone.gif';
 				$buttonLabelLeft = 1;
-				$buttonLabel = $this->flexConfig['button_label'];
+				$buttonLabel = ($this->flexConfig['button_label']!="")?$this->flexConfig['button_label']:$this->conf['button.']['label'];
 				break;
 			case 6:
-				$buttonUrl = $this->flexConfig['button_icon'];
+				$buttonUrl = ($this->flexConfig['button_icon']!="")?$this->flexConfig['button_icon']:$this->conf['button.']['icon'];
 				$buttonLabelLeft = 1;
-				$buttonLabel = $this->flexConfig['button_label'];
+				$buttonLabel = ($this->flexConfig['button_label']!="")?$this->flexConfig['button_label']:$this->conf['button.']['label'];
 				break;
 			default:
-				$buttonUrl = 'http://api.joliprint.com/res/joliprint/img/buttons/default/joliprint-button.png';
+				$buttonUrl = $this->joliPath.'joliprint-button.png';
 				break;
 		}
 	
