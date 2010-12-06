@@ -102,7 +102,7 @@ class tx_joliprint_pi1 extends tslib_pibase {
 		<script type="text/javascript">
 		$joliprint()';
 		if ($buttonLabelLeft==1) $content .= '.set("label","'.$buttonLabel.'").set("labelposition","after")';
-		$content .='.set("buttonUrl", "'.$buttonUrl.'").write();</script>';
+		$content .='.set("buttonUrl", "'.$buttonUrl.'").set("service","typo3-plugin").write();</script>';
 				
 		return $this->pi_wrapInBaseClass($content);
 	}
