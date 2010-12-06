@@ -2,3 +2,8 @@
 
 	* initial code generated with kickstarter
 	* create flexform config
+
+2010-12-06 Dirk Diebel <typo3@phpmedia.de
+	* version 2.0.3
+	* small js fix
+	* line 105: .set("buttonUrl", "'.$buttonUrl.'").set("service","typo3-plugin").write();
